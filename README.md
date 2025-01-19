@@ -1,14 +1,20 @@
-# buzzline-01-case
+# buzzline-01-badeniyan
 
-This project introduces streaming data. 
-The Python language includes generators - we'll use this feature to generate some streaming buzzline messages. 
-As the code runs, it will continuously update log file. 
-We'll use a consumer to modify this log file and alert us when a special message is detected. 
+Streaming Data, Project 1
+Bukola Adeniyan, https://github.com/Queensdelight/buzzline-01-badeniyan.git
+
+## Introduction
+
+This Project Processing System is a real-time producer-consumer application designed to generate, monitor, and analyze log messages efficiently. The Python language includes generators - this feature will generate some streaming buzzline messages. This project was forked from Dr. Case's project repository found [here](https://github.com/denisecase/buzzline-01-case). Much of the detailed instructions in this README.md were borrowed from Dr. Case's project specifications, and updated for my machine.
+
+This project consists of two key components:
+
+1. Producer: Generates and writes log messages to a log file.
+
+2. Consumer: Reads the log file in real-time, detects specific patterns, and triggers alerts when needed.
+
 
 ## Task 1. Set Up Your Machine
-
-First, you'll need to set up your machine. 
-Detailed instructions by operating system are provided. 
 
 1. Install Git.
 2. Install Python **Version 3.11**.
@@ -24,10 +30,9 @@ For detailed instructions, see:
 
 ## Python Versions (3.11 for this course)
 
-The most current version of Python is 3.13. 
-This course will use advanced tools (such as Kafka) that still require Python 3.11. 
-You are encouraged to install both and practice multiple versions. 
-If space is an issue, we only need 3.11 in this course. 
+Note that the most current version of Python 3.13 will not work well with the tools required for this project at this time January 2025, maybe things may change in the near future.
+Because this course will use advanced tools (such as Kafka) that still require Python 3.11.
+If space is an issue, we only need 3.11 in this course.
 For more information, See [PYTHON-VERSIONS.md](docs/PYTHON-VERSIONS.md).
 
 ## Task 2. Copy This Example Project & Change `case` to `yourname` (customized)
@@ -67,13 +72,13 @@ Windows PowerShell:
 
 ```shell
 .venv\Scripts\activate
-py -m producers.basic_producer_case
+py -m producers.basic_producer_badeniyan
 ```
 
 Mac/Linux:
 ```zsh
 source .venv/bin/activate
-python3 -m producers.basic_producer_case
+python3 -m producers.basic_producer_badeniyan
 ```
 
 ## Task 5. Monitor an Active Log File (Terminal 2)
@@ -87,13 +92,13 @@ Use the commands below to activate .venv, and run the file as a module.
 Windows:
 ```shell
 .venv\Scripts\activate
-py -m consumers.basic_consumer_case
+py -m consumers.basic_consumer_badeniyan
 ```
 
 Mac/Linux:
 ```zsh
 source .venv/bin/activate
-python3 -m consumers.basic_consumer_case
+python3 -m consumers.basic_consumer_badeniyan
 ```
 
 ## Save Space
